@@ -1,14 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  trailingSlash: false,
-  skipTrailingSlashRedirect: true,
-  experimental: {
-    turbo: {
-      resolveAlias: {
-        '@': './src',
-      },
-    },
+  eslint: {
+    ignoreDuringBuilds: false,
+  },
+  typescript: {
+    ignoreBuildErrors: false,
   },
 };
 
